@@ -1,0 +1,65 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #f4f6f8;
+  color: #1c2530;
+}
+
+main {
+  max-width: 560px;
+  margin: 48px auto;
+  padding: 0 16px;
+}
+
+h1 { margin: 0 0 4px; font-size: 1.6rem; }
+.sub { margin: 0 0 24px; color: #5b6775; font-size: 0.9rem; }
+
+form { display: flex; gap: 8px; margin-bottom: 16px; }
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #c8d0d9;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover { background: #1d4ed8; }
+
+ul { list-style: none; margin: 0; padding: 0; }
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  background: #fff;
+  border: 1px solid #e1e6ec;
+  border-radius: 8px;
+}
+
+li span { flex: 1; }
+li.done span { text-decoration: line-through; color: #8a95a3; }
+
+li button.del {
+  padding: 4px 10px;
+  background: #e5e9ee;
+  color: #3b4654;
+  font-size: 0.85rem;
+}
+li button.del:hover { background: #d3d9e0; }
+
+.error { color: #b42318; margin: 0 0 12px; }
+.footer { margin-top: 16px; color: #5b6775; font-size: 0.85rem; }
